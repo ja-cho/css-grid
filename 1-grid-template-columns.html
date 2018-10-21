@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS GRID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+.container {
+	display: grid;
+	grid-gap: 10px;
+}
+
+.container1 {
+	grid-template-columns: 1fr;
+}
+
+.container2 {
+	grid-template-columns: auto 1fr;
+}
+
+.container3 {
+	grid-template-columns: 300px auto;
+}
+
+.container4 {
+	grid-template-columns: 1fr 50px 60%;
+}
+
+.container5 {
+	grid-template-columns: repeat(2, 1fr 2fr);
+}
+
+.container6 {
+	grid-template-columns: 50% repeat(2, 1fr 2fr);
+}
+
+.container7 {
+	grid-template-columns: repeat(2, 50px) repeat(2, 1fr 2fr);
+}
+</style>
+
+<div class="section">
+	<h2>grid-template-columns: 1fr</h2>
+	<div class="container container1">
+	  <div class="item item1">1</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: auto 1fr</h2>
+	<div class="container container2">
+	  <div class="item item1 italic">&nbsp;1 - auto column&nbsp;</div>
+	  <div class="item item2">2</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: 300px auto</h2>
+	<div class="container container3">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: 1fr 50px 60%</h2>
+	<div class="container container4">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3">3</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: repeat(2, 1fr 2fr)</h2>
+	<div class="container container5">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3">3</div>
+	  <div class="item item4">4</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: 50% repeat(2, 1fr 2fr)</h2>
+	<div class="container container6">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3">3</div>
+	  <div class="item item4">4</div>
+	  <div class="item item5">5</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: repeat(2, 50px) repeat(2, 1fr 2fr)</h2>
+	<div class="container container7">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3">3</div>
+	  <div class="item item4">4</div>
+	  <div class="item item5">5</div>
+	  <div class="item item6">6</div>
+	</div>
+</div>
+
+</body>
+</html>

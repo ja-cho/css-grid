@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+
+/*** HTML5 Reset ***/
+
+article,
+aside,
+details,
+figcaption,
+figure, 
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display : block;
+}
+
+
+/*** Layout ***/
+
+html,
+body {
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    background: #fff;
+    color : #383836;
+    font : 13px Arial, Verdana, Helvetica, sans-serif;
+    line-height : 1;
+    -webkit-text-size-adjust : none;
+}
+
+.section {
+	padding: 50px;
+	text-align: center;
+}
+
+.container {	
+	width: 90%;
+	margin: 0 auto;
+}
+
+.item {
+	background: #2F2F2F;
+	color: #fff;
+	font-size: 20px;
+	line-height: 46px;	
+}
+
+.color {
+	color: #1582CE;
+}
+
+.item-bg {
+	background: #1582CE;
+}
+
+.italic {
+	font-style: italic;
+}

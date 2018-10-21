@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS GRID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+.container {
+	display: grid;
+	grid-gap: 10px;
+}
+
+.container1 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px;
+	grid-auto-rows: 50px;
+}
+
+.container2 {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 50px;
+	grid-auto-rows: 50px 100px;
+}
+
+.container3 {
+	grid-template-columns: auto;
+	grid-auto-flow: row;
+}
+
+.container4 {
+	grid-template-columns: auto;
+	grid-auto-flow: column;
+}
+
+.container5 {
+	grid-template-columns: 1fr;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+}
+
+</style>
+
+<div class="section">
+	<h2>grid-template-columns: 1fr 1fr</h2>
+	<h2>grid-template-rows: 50px</h2>
+	<h2 class="color">grid-auto-rows: 50px</h2>
+	<div class="container container1">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3 item-bg">3</div>
+	  <div class="item item4 item-bg">4</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: 1fr 1fr</h2>
+	<h2>grid-template-rows: 50px</h2>
+	<h2 class="color">grid-auto-rows: 50px 100px</h2>
+	<div class="container container2">
+	  <div class="item item1">1</div>
+	  <div class="item item2">2</div>
+	  <div class="item item3 item-bg">3</div>
+	  <div class="item item4 item-bg">4</div>
+	  <div class="item item5 item-bg">5</div>
+	  <div class="item item6 item-bg">6</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: auto</h2>
+	<h2 class="color">grid-auto-flow: row</h2>
+	<div class="container container3">
+	  <div class="item item1">1</div>
+	  <div class="item item2 item-bg">2</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: auto</h2>
+	<h2 class="color">grid-auto-flow: column</h2>
+	<div class="container container4">
+	  <div class="item item1">1</div>
+	  <div class="item item2 item-bg">2</div>
+	</div>
+</div>
+
+<div class="section">
+	<h2>grid-template-columns: 1fr</h2>
+	<h2 class="color">grid-auto-flow: column</h2>
+	<h2 class="color">grid-auto-columns: 1fr</h2>
+	<div class="container container5">
+	  <div class="item item1">1</div>
+	  <div class="item item2 item-bg">2</div>
+	  <div class="item item3 item-bg">3</div>
+	  <div class="item item4 item-bg">4</div>
+	  <div class="item item5 item-bg">5</div>
+	  <div class="item item6 item-bg">6</div>
+	  <div class="item item7 item-bg">7</div>
+	  <div class="item item8 item-bg">8</div>
+	  <div class="item item9 item-bg">9</div>
+	  <div class="item item10 item-bg">10</div>
+	</div>
+</div>
+
+</body>
+</html>
